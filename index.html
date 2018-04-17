@@ -21,28 +21,46 @@
         abaixo e clique no botão "Resolver!"</p>
       <section id="coeficientes-da-equacao">
         <label for="coeficiente-a" class="matematica">a: </label>
-        <input id="coeficiente-a" type="number" value="1">
+        <input id="coeficiente-a" type="number" value="1" required>
         <label for="coeficiente-b" class="matematica">b: </label>
-        <input id="coeficiente-b" type="number" value="1">
-        <!-- colocar o coeficiente c e o button aqui -->
-      </section>
+        <input id="coeficiente-b" type="number" value="1" required>
+        <label for="coeficiente-c" class="matematica">c: </label>
+        <input id="coeficiente-c" type="number" value="1" required>
+        <button id="resolver">Resolver!</button>
+      </section>       
       <section id="resultado">
         O resultado é:
         <ul>
           <li>
-            <span class="matematica">Δ</span>: <input id="resultado-delta" type="number" disabled>
+            <span class="matematica">Δ</span>: 
+            <input id="resultado-delta" type="number" disabled>
             <span class="matematica">Δ = b<sup>2</sup> - 4ac</span>
           </li>
           <li>
-            <span class="matematica">x<sub>1</sub></span>: <input id="resultado-x1" type="number" disabled>
+            <span class="matematica">x<sub>1</sub></span>: 
+            <input id="resultado-x1" type="number" disabled>
             <span class="matematica">x<sub>1</sub> = (-b + √Δ)/2a</span>
           </li>
           <li>
-            <span class="matematica">x<sub>2</sub></span>: <input id="resultado-x2" type="number" disabled>
+            <span class="matematica">x<sub>2</sub></span>: 
+            <input id="resultado-x2" type="number" disabled>
             <span class="matematica">x<sub>2</sub> = (-b - √Δ)/2a</span>
+          </li>
+          <li>
+            <span class="matematica">Quantidade de raízes</span>: 
+            <input id="quantidade-raizes" type="text" disabled>            
+          </li>
+          <li>
+            <span class="matematica">Parábola voltada para</span>: 
+            <input id="parabola" type="text" disabled>            
+          </li>
+          <li>
+            <span class="matematica">Posição do vértice</span>: 
+            <input id="vertice" type="text" disabled>            
           </li>
         </ul>
       </section>
     </main>
+    <script src="resolucao.js"></script>
   </body>
 </html>
